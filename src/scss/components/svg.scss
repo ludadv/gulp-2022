@@ -1,0 +1,22 @@
+svg {
+  fill: currentColor;
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-checkbox {
+  width: rem(20);
+  height: rem(20);
+  &--blue {
+    fill: #56BBD0;
+  }
+  &--grey {
+    fill: #CED7E1;
+  }
+  &--green {
+    fill: #3CC68A;
+  }
+}
+.icon-arrow {
+  width: rem(6);
+  height: rem(11);
+}

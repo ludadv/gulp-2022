@@ -1,0 +1,48 @@
+//header
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: rem(87);
+ &__content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: rem(25) 0;
+   @media screen and (min-width: $breakpoint-xs) {
+     justify-content: stretch;
+   }
+ }
+  &__logo {
+    width: rem(153);
+    height: rem(37);
+  }
+}
+
+//menu
+.menu {
+  display: none;
+  @media screen and (min-width: $breakpoint-xs) {
+    display: block;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 40px;
+    column-gap: rem(30);
+    row-gap: rem(3);
+    align-items: center;
+  }
+  &__link {
+    font-family: $font-family-secondary;
+    color: #02073E;
+    font-size: rem(15);
+    line-height: 2;
+    transition: color .3s linear;
+    &:hover {
+      color: #56BBD0;
+    }
+  }
+}
